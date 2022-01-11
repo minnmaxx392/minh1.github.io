@@ -1,0 +1,511 @@
+/* Reset CSS*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+#main{
+
+}
+
+html, body{
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Lato, sans-serif;
+    scroll-behavior: smooth;
+} 
+
+#nav{
+    display: inline-block;
+}
+
+#header{
+    height: 46.4px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#nav > li{
+    display: inline-block;
+}
+
+#nav li a{
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    padding: 12px 24px;
+    box-sizing: border-box;
+    height: 46.4px;
+}
+
+#nav > li > a{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+#nav > li:hover > a{
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav .subnav{
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    display: none;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav a{
+    color: #000;
+    padding: 8px 16px;
+    line-height: 22px;
+    height: 35.8px;
+    min-width: 160px;
+    box-sizing: border-box;
+}
+
+#nav .subnav li:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+#header .search-button{
+    color: #fff;
+    float: right;
+    padding: 12px 24px;
+    font-size: 15px;
+    height: 46.4px;
+    line-height: 22px;
+}
+
+#header .fa{
+    font-size: 15px;
+}
+
+#header .search-button:hover{
+    color: #fff;
+    background-color: #f44336 ;
+    cursor: pointer;
+}
+
+#slider{
+    margin-top: 46.4px;
+    padding-top: 50%;
+    background: url(/f8-band/img/chicago.jpg) top center / cover no-repeat;
+    position: relative;
+}
+
+#slider .content-wrapper{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 32px 16px;
+    font-weight: 400;
+}
+
+#slider .content-wrapper div{
+    margin: 10px 0px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 24px;
+    height: 36px;
+}
+
+#slider .content-wrapper p{
+    margin: 15px 0px;
+    height: 22.5px;
+}
+
+#slider .content-wrapper b{
+    font-size: 15px;
+    font-family: Lato, sans-serif;
+}
+
+#content{
+
+}
+
+#content .content-section{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    box-sizing: border-box;
+}
+
+#content .content-section .section-heading{
+    margin: 10px 0px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+#content .content-section .heading {
+    margin: 15px 0px;
+    text-align: center;
+}
+
+#content .content-section div > i{
+    opacity: 0.60;
+}
+
+#content .content-section .text{
+    text-align: justify;
+    margin: 15px 0px;
+}
+
+#content .content-section .bandmember{
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+    padding: 32px 0px;
+}
+
+#content .content-section .bandmember .member{
+    float: left;
+    width: 33.33333333%;
+}
+
+#content .content-section .bandmember .member p{
+    margin: 15px 0px;
+}
+
+#content .content-section .bandmember .member .img{
+    margin: 0px 0px 16px;
+    width: 153.59px;
+    border-radius: 4px;
+}
+
+.tour-section{
+    background-color: #000;
+}
+
+.tickets-list{
+    background-color: #fff;
+}
+
+.tickets-list li{
+    color: #757575;
+    padding: 8px 16px;
+    list-style-type: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.tickets-list .sold-out{
+    background-color: #F44336;
+    color: #fff;
+    margin: 0 0 0 16px;
+    padding: 0 8px;
+    display: inline-block;
+}
+
+.tickets-list .quantity{
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    margin: 0 16px 0 0;
+    padding: 0 8px;
+    border-radius: 50%;
+    float: right;
+}
+
+.place-list{
+    overflow: hidden;
+    margin: 0 -8px;
+    padding: 32px 0 32px;
+}
+
+.place-item{
+    float: left;
+    width: 33.3333333%;
+    padding: 0 8px;
+}
+
+.place-body{
+    background-color: #fff;
+    padding: 0.15px 16px;
+}
+.place-img{
+    vertical-align: middle;
+    width: 100%;
+}
+
+.place-img:hover{
+    opacity: 0.7;
+}
+
+.place-name, .place-date, .place-text{
+    margin: 15px 0px;
+}
+
+.place-date{
+    opacity: 0.6;
+}
+
+.place-tickets{
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    display: inline-block;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Lato, sans-serif;
+}
+
+.place-tickets:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    animation: modalMoveDown ease 0.7s;
+}
+
+.modal-header{
+    background-color: #009688;
+    position: relative;
+    font-size: 30px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #fff;
+    padding: 32px 16px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.modal-header p{
+    margin: 10px 0;
+}
+
+.modal-close{
+    position: absolute;
+    z-index: 1;
+    padding: 8px 16px;
+    font-size: 20px;
+    font-family: Lato, sans-serif;
+    top: 0;
+    right: 0;
+}
+
+.modal-close:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.modal-label{
+    display: block;
+    margin: 15px 0px;
+}
+
+.modal-body{
+    padding: 0.15px 16px;
+    height: 343.3px;
+}
+
+.modal-input{
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    font: inherit;
+}
+
+#modal-pay{
+    width: 100%;
+    background-color: #009688;
+    color: #fff;
+    height: 54.4px;
+    margin: 16px 0px;
+    padding: 16px;
+    border: 0px;
+    text-transform: uppercase;
+    text-decoration: bold;
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+}
+
+#modal-pay:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-help{
+    float: right;
+    margin: 15px 0px;
+}
+
+.footer-close{
+    margin: 16px 0px;
+    padding: 8px 16px;
+    background-color: #F44336;
+    color: #fff;
+    width: 83.51px; 
+    display: block;
+    position: absolute;
+
+}
+
+.modal-footer{
+    position: relative;
+}
+
+.modal-help a{
+    color: #2196F3;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.footer-close:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+@keyframes modalMoveDown {
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.body-contact{
+    padding: 32px 0px;
+    display: flex;
+    font-size: 18px;
+}
+
+.form-control{
+    padding: 8px;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+
+.row-up{
+    padding: 0px 16px;
+    margin: 0 -16px 8px -16px;
+    display: flex; 
+}
+
+.row-down{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-send{
+    float: right;
+    margin: 16px 0;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #000;
+    border: 0px;
+    cursor: pointer;
+}
+
+.btn-send:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.body-contact i[class*="fa-"]{
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form{
+    font: inherit;
+}
+
+.img-responsive{
+    width: 100%;
+    filter: grayscale(50%);
+    height: auto;
+}
+
+#footer{
+    min-height: 216.5px;
+}
+
+.end-sub{
+    margin: 15px 0px;
+    text-align: center;
+}
+
+.icon-end{
+    color: #ccc;
+}
